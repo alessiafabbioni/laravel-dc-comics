@@ -3,7 +3,7 @@
     <title>Home</title>
 @endsection
 @section('content')
-    <h1>Comics Archives: {{count($comics)}}</h1>
+    <h1>Comics Archives:</h1>
     
        
             <table class="table">
