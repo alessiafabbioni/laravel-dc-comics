@@ -4,6 +4,8 @@
 @endsection
 @section('content')
     <h1>Comics Archives:</h1>
+    <a class="btn btn-primary" href="{{ route('users.create')}}" role="button">Add Comic</a>
+
     
        
             <table class="table">
@@ -19,7 +21,7 @@
                     @foreach ($comics as $comic)
                         <tr>
                             <th scope="row">{{ $comic -> id}}</th>
-                            <td>{{ $comic -> title}}</td>
+                            <td><a href="{{ route('users.show', $comic -> id) }}">{{ $comic -> title}}</a></td>
                             <td>{{ $comic -> author}}</td>
                             <td>{{ $comic -> genre}}</td>
                         </tr>
